@@ -1,0 +1,56 @@
+
+.functioning
+{
+    h2 
+    {
+        margin: 20px;
+    }
+    .box{
+        display: flex;
+        background: $color-grey;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        border-radius: 25px;
+        padding: 25px;
+        margin: 25px;
+        font-size: 20px;
+        align-items: center;
+        p {
+            margin: 0;
+            font-weight: bold;
+            padding-left: 25px;
+            overflow: hidden;
+            width: 75%;
+        }
+        i{
+            color: darken($color-grey, 50%);
+            width: auto;
+            overflow: visible;
+        }          
+        }
+
+    .number{
+            
+                background-color: $color-primary;
+                border-radius: 20px;
+                color: $color-white;
+                text-align: center;
+                height: 30px;
+                min-width: 35px;
+                max-width: 35px;
+                width: 15%;
+                padding-top: 5px;
+                position: relative;
+                right: 40px;
+                z-index: 2;
+            }   
+
+    @media (min-width: 992px)
+    {
+        display: flex;
+        align-items: center;
+        .box{
+            width: 33%;
+        }     
+    }
+}
+

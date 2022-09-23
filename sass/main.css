@@ -41,6 +41,7 @@ h1 {
 .presentation p {
   font-size: 20px;
   margin-bottom: 50px;
+  color: #777777;
 }
 .presentation a {
   text-decoration: none;
@@ -49,4 +50,53 @@ h1 {
   font-size: 20px;
   padding: 15px;
   border-radius: 25px;
+}
+
+.functioning h2 {
+  margin: 20px;
+}
+.functioning .box {
+  display: flex;
+  background: #F6F6F6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 25px;
+  margin: 25px;
+  font-size: 20px;
+  align-items: center;
+}
+.functioning .box p {
+  margin: 0;
+  font-weight: bold;
+  padding-left: 25px;
+  overflow: hidden;
+  width: 75%;
+}
+.functioning .box i {
+  color: #777777;
+  width: auto;
+  overflow: visible;
+}
+.functioning .number {
+  background-color: #9356DC;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  height: 30px;
+  min-width: 35px;
+  max-width: 35px;
+  width: 15%;
+  padding-top: 5px;
+  position: relative;
+  right: 40px;
+  z-index: 2;
+}
+@media (min-width: 992px) {
+  .functioning {
+    display: flex;
+    align-items: center;
+  }
+  .functioning .box {
+    width: 33%;
+  }
 }/*# sourceMappingURL=main.css.map */
