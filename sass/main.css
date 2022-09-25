@@ -28,6 +28,11 @@ h1 {
   font-family: "Shrikhand", cursive;
 }
 
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
 .presentation {
   text-align: center;
   background-color: #F6F6F6;
@@ -99,4 +104,49 @@ h1 {
   .functioning .box {
     width: 33%;
   }
+}
+
+.restaurant {
+  width: 100%;
+  background-color: #F6F6F6;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 750px;
+}
+.restaurant h2 {
+  width: 90%;
+}
+
+.card {
+  width: 90%;
+  height: 20%;
+  background-color: #fff;
+  border-radius: 25px;
+}
+.card .images {
+  height: 65%;
+  width: 100%;
+}
+.card .images img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+}
+.card .text {
+  height: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+.card .text p {
+  margin: 0;
+}
+.card .text h3 {
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
