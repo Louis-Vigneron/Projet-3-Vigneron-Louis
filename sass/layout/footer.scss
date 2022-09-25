@@ -1,0 +1,16 @@
+.footer{
+    color: $color-white;
+    background-color: darken($color-grey, 75%);
+    height: 200px;
+    width: 100%;
+    padding: 25px;
+    .category{
+        margin-bottom: 10px;
+        i {
+            margin-right: 5px;
+        }
+    }
+    p{
+        font-family: 'Shrikhand', cursive;
+    }
+}

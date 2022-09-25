@@ -1,4 +1,17 @@
 /*color*/
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
 .logo-header {
   text-align: center;
   font-size: 50px;
@@ -20,17 +33,21 @@
   margin: 20px;
 }
 
-* {
-  font-family: "Roboto", sans-serif;
+.footer {
+  color: #fff;
+  background-color: #373737;
+  height: 200px;
+  width: 100%;
+  padding: 25px;
 }
-
-h1 {
+.footer .category {
+  margin-bottom: 10px;
+}
+.footer .category i {
+  margin-right: 5px;
+}
+.footer p {
   font-family: "Shrikhand", cursive;
-}
-
-a {
-  color: #000000;
-  text-decoration: none;
 }
 
 .presentation {
