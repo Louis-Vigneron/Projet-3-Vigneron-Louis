@@ -1,6 +1,6 @@
 .logo-header {
     text-align: center;
-    font-size: 50px;
+    font-size: 68px;
     padding: 15px 0;
     @include card_shadow;
     display: flex;
@@ -8,7 +8,7 @@
     justify-content: center;
     background-color: $color-white;
     .img_logo{
-        width: 95%;
+        width: 90%;
         img {
             height: 50px;
         }

@@ -17,6 +17,11 @@ body {
   background-color: #F6F6F6;
 }
 
+figure {
+  margin: 0;
+  padding: 0;
+}
+
 .button {
   text-decoration: none;
   color: #fff;
@@ -26,9 +31,32 @@ body {
   border-radius: 25px;
 }
 
+.new {
+  color: #278870;
+  background-color: #99E2D0;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  font-weight: bold;
+  bottom: 90px;
+  width: 75px;
+  padding: 5px;
+  margin-right: 15px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .new {
+    bottom: 215px;
+  }
+}
+@media (min-width: 992px) {
+  .new {
+    bottom: 200px;
+  }
+}
+
 .logo-header {
   text-align: center;
-  font-size: 50px;
+  font-size: 68px;
   padding: 15px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -37,7 +65,7 @@ body {
   background-color: #fff;
 }
 .logo-header .img_logo {
-  width: 95%;
+  width: 90%;
 }
 .logo-header .img_logo img {
   height: 50px;
@@ -86,7 +114,7 @@ body {
   font-family: "Shrikhand", cursive;
   font-size: 25px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .footer {
     display: flex;
     height: 100px;
@@ -113,6 +141,7 @@ body {
 
 .functioning {
   background-color: #fff;
+  padding: 25px;
 }
 .functioning h2 {
   margin: 20px;
@@ -151,7 +180,6 @@ body {
   padding-top: 5px;
   position: relative;
   right: 40px;
-  z-index: 2;
 }
 @media (min-width: 992px) {
   .functioning {
@@ -204,7 +232,7 @@ body {
     height: 80%;
   }
   .restaurant .card .images {
-    height: 70%;
+    height: 75%;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -214,6 +242,9 @@ body {
   .restaurant .card {
     width: 45%;
     height: 40%;
+  }
+  .restaurant .card .images {
+    height: 75%;
   }
 }
 
@@ -226,6 +257,9 @@ body {
 .card .images {
   height: 65%;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
 }
 .card .images img {
   -o-object-fit: cover;
@@ -292,9 +326,10 @@ body {
 }
 .restaurant_card .menu .dish p {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin: 0;
-  padding: 10px 25px 15px 15px;
+  padding: 10px 15px 15px 15px;
 }
 .restaurant_card .menu .dish p span {
   font-weight: bold;

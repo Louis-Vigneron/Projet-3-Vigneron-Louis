@@ -24,7 +24,8 @@
             height: 80%;
             .images
             {
-                height: 70%;
+                height: 75%;
+                
             }
         }
     }
@@ -36,6 +37,10 @@
         .card {
             width: 45%;
             height: 40%;
+            .images
+            {
+                height: 75%;
+            }
         }
     }
 }
@@ -48,7 +53,10 @@
     
     .images{
         height: 65%;
-        width: 100%;
+        width: 100%;               
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
         img{
             object-fit: cover;
             height: 100%;
@@ -63,6 +71,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 15px 20px;
+        
         p{
             margin: 0;
         }
