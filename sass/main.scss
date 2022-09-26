@@ -1,11 +1,15 @@
 @import "./utils/variables";
+@import "./utils/mixins";
 
 @import "./base/font";
 @import "./base/general.scss";
 
+@import "./composants/button";
+
 @import "./layout/header";
 @import "./layout/footer.scss";
 
-@import "./pages/home/presentation";
-@import "./pages/home/functioning";
-@import "./pages/home/restaurants";
+@import "./pages/presentation";
+@import "./pages/functioning";
+@import "./pages/restaurants";
+@import "./pages/restaurant_card";

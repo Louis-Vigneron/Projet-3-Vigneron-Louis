@@ -1,6 +1,7 @@
 
 .functioning
 {
+    background-color: $color-white;
     h2 
     {
         margin: 20px;
@@ -8,7 +9,7 @@
     .box{
         display: flex;
         background: $color-grey;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        @include card_shadow;
         border-radius: 25px;
         padding: 25px;
         margin: 25px;

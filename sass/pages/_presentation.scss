@@ -14,12 +14,4 @@
         margin-bottom: 50px;
         color: darken($color-grey, 50%);
     }
-    a {
-        text-decoration: none;
-        color: $color-white;
-        background: linear-gradient($color-secondary,$color-primary);
-        font-size: 20px;
-        padding: 15px;
-        border-radius: 25px;
-    }
 }

@@ -1,0 +1,70 @@
+.restaurant_card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color-grey;
+    padding: 25px;
+    border-radius: 50px 50px 0 0;
+    position: relative;
+    z-index: 2;
+    bottom: 50px;
+    h1{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+     .button{
+            text-align: center;
+            padding: 15px 50px;
+            margin-top: 25px;  
+        }
+    .menu {
+        display: flex;
+        flex-wrap: wrap;  
+         h2 {
+            font-weight: 400;
+            border-bottom: 3px solid $color-tertiray;
+            width: 50px;
+            position: relative;
+            }
+      
+        .enter, .main_dish, .dessert{
+            width: 100%
+        }
+        .dish{
+            @include card_shadow;
+            background-color: $color-white;
+            margin-bottom: 25px;
+            border-radius: 25px;
+            width: 100%;
+            p{
+                display: flex;
+                justify-content: space-between;
+                margin: 0;
+                padding: 10px 25px 15px 15px;
+                span {
+                    font-weight: bold;
+                }
+            }
+            h3{
+                margin: 0;
+                padding: 15px 15px 0 15px;
+            }
+        
+            
+        }
+    }
+    @media (min-width:$screen-tablet)
+    {
+        .menu {
+            width: 100%;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            .dish{
+                width: 90%;
+            }
+        }
+    }
+}
