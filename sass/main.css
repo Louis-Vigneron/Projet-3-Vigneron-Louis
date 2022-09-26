@@ -1,4 +1,5 @@
 /*color*/
+/*Screen*/
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -37,7 +38,6 @@ a {
   color: #fff;
   background-color: #373737;
   height: 200px;
-  width: 100%;
   padding: 25px;
 }
 .footer .category {
@@ -48,6 +48,15 @@ a {
 }
 .footer p {
   font-family: "Shrikhand", cursive;
+  font-size: 25px;
+}
+@media (min-width: 992px) {
+  .footer {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
 .presentation {
@@ -122,6 +131,21 @@ a {
     width: 33%;
   }
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .functioning {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .functioning h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .functioning .box {
+    width: 50%;
+  }
+}
 
 .restaurant {
   width: 100%;
@@ -135,6 +159,31 @@ a {
 }
 .restaurant h2 {
   width: 90%;
+  font-size: 30px;
+}
+@media (min-width: 992px) {
+  .restaurant {
+    height: 350px;
+  }
+  .restaurant h2 {
+    text-align: center;
+  }
+  .restaurant .card {
+    width: 20%;
+    height: 80%;
+  }
+  .restaurant .card .images {
+    height: 70%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .restaurant h2 {
+    text-align: center;
+  }
+  .restaurant .card {
+    width: 45%;
+    height: 40%;
+  }
 }
 
 .card {

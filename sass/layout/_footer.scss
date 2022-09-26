@@ -2,7 +2,6 @@
     color: $color-white;
     background-color: darken($color-grey, 75%);
     height: 200px;
-    width: 100%;
     padding: 25px;
     .category{
         margin-bottom: 10px;
@@ -12,5 +11,13 @@
     }
     p{
         font-family: 'Shrikhand', cursive;
+        font-size: 25px;
+    }
+    @media (min-width : $screen-desktop)
+    {
+        display: flex;
+        height: 100px;
+        align-items: center;
+        justify-content: space-around;
     }
 }

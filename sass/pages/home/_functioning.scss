@@ -44,12 +44,26 @@
                 z-index: 2;
             }   
 
-    @media (min-width: 992px)
+    @media (min-width: $screen-desktop)
     {
         display: flex;
         align-items: center;
         .box{
             width: 33%;
+        }     
+    }
+    @media (min-width:$screen-tablet) and (max-width:$screen-desktop)
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+        .box{
+            width: 50%;
         }     
     }
 }
