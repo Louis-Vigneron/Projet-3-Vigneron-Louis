@@ -54,6 +54,10 @@ figure {
   }
 }
 
+.favorite:hover {
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
 .logo-header {
   text-align: center;
   font-size: 68px;
