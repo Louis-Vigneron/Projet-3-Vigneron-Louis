@@ -51,15 +51,8 @@
                 right: 40px;
             }   
 
-    @media (min-width: $screen-desktop)
-    {
-        display: flex;
-        align-items: center;
-        .box{
-            width: 33%;
-        }     
-    }
-    @media (min-width:$screen-tablet) and (max-width:$screen-desktop)
+   
+    @media (min-width:$screen-tablet) 
     {
         display: flex;
         flex-wrap: wrap;
@@ -71,6 +64,13 @@
         }
         .box{
             width: 50%;
+        }     
+    } 
+    
+    @media (min-width: $screen-desktop)
+    {
+        .box{
+            width: 22%;
         }     
     }
 }

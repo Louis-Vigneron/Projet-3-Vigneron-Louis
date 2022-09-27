@@ -12,24 +12,8 @@
        width: 90%;
        font-size: 30px;
     }
-    @media (min-width:$screen-desktop)
-    {
-        
-        height: 350px;
-        h2 {
-            text-align: center;
-        }
-        .card{
-            width: 20%;
-            height: 80%;
-            .images
-            {
-                height: 75%;
-                
-            }
-        }
-    }
-    @media (min-width:$screen-tablet) and (max-width:$screen-desktop)
+    
+    @media (min-width:$screen-tablet)
     {
         h2 {
             text-align: center;
@@ -41,6 +25,16 @@
             {
                 height: 75%;
             }
+        }
+    }
+
+    @media (min-width:$screen-desktop)
+    {
+        
+        height: 350px;
+        .card{
+            width: 20%;
+            height: 80%;
         }
     }
 }

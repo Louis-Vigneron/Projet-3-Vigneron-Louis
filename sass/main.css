@@ -43,7 +43,7 @@ figure {
   padding: 5px;
   margin-right: 15px;
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) {
   .new {
     bottom: 215px;
   }
@@ -191,16 +191,7 @@ figure {
   position: relative;
   right: 40px;
 }
-@media (min-width: 992px) {
-  .functioning {
-    display: flex;
-    align-items: center;
-  }
-  .functioning .box {
-    width: 33%;
-  }
-}
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) {
   .functioning {
     display: flex;
     flex-wrap: wrap;
@@ -213,6 +204,11 @@ figure {
   }
   .functioning .box {
     width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .functioning .box {
+    width: 22%;
   }
 }
 
@@ -230,22 +226,7 @@ figure {
   width: 90%;
   font-size: 30px;
 }
-@media (min-width: 992px) {
-  .restaurant {
-    height: 350px;
-  }
-  .restaurant h2 {
-    text-align: center;
-  }
-  .restaurant .card {
-    width: 20%;
-    height: 80%;
-  }
-  .restaurant .card .images {
-    height: 75%;
-  }
-}
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) {
   .restaurant h2 {
     text-align: center;
   }
@@ -255,6 +236,15 @@ figure {
   }
   .restaurant .card .images {
     height: 75%;
+  }
+}
+@media (min-width: 992px) {
+  .restaurant {
+    height: 350px;
+  }
+  .restaurant .card {
+    width: 20%;
+    height: 80%;
   }
 }
 
