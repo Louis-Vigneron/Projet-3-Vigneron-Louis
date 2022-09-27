@@ -156,6 +156,12 @@ figure {
   font-size: 20px;
   align-items: center;
 }
+.functioning .box.box_purple {
+  background-color: #f2eafb;
+}
+.functioning .box.box_purple i {
+  color: #9356DC;
+}
 .functioning .box p {
   margin: 0;
   font-weight: bold;

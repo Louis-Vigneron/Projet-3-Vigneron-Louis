@@ -16,6 +16,12 @@
         margin: 25px;
         font-size: 20px;
         align-items: center;
+        &.box_purple{
+            background-color: lighten($color: $color-primary, $amount: 35) ;
+            i {
+            color: $color-primary;
+            }
+        }
         p {
             margin: 0;
             font-weight: bold;
