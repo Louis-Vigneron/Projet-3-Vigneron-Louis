@@ -7,7 +7,7 @@
     {
         margin: 20px;
     }
-    .box{
+    &__box{
         display: flex;
         background: $color-grey;
         @include card_shadow;
@@ -16,17 +16,28 @@
         margin: 25px;
         font-size: 20px;
         align-items: center;
-        &.box_purple{
-            background-color: lighten($color: $color-primary, $amount: 35) ;
-            i {
-            color: $color-primary;
-            }
-        }
-        p {
+        
+        &__number{
+            
+            background-color: $color-primary;
+            border-radius: 20px;
+            color: $color-white;
+            text-align: center;
+            height: 30px;
+            min-width: 35px;
+            max-width: 35px;
+            width: 15%;
+            padding-top: 5px;
+            position: relative;
+            right: 40px;
+        } 
+        &__text {
             margin: 0;
             font-weight: bold;
             padding-left: 25px;
+            font-size: 18px;
             overflow: hidden;
+            text-overflow: ellipsis;
             width: 75%;
         }
         i{
@@ -34,24 +45,14 @@
             width: auto;
             overflow: visible;
         }          
+        &--purple{
+            background-color: lighten($color: $color-primary, $amount: 35) ;
+            i {
+            color: $color-primary;
+            }
+        }
         }
 
-    .number{
-            
-                background-color: $color-primary;
-                border-radius: 20px;
-                color: $color-white;
-                text-align: center;
-                height: 30px;
-                min-width: 35px;
-                max-width: 35px;
-                width: 15%;
-                padding-top: 5px;
-                position: relative;
-                right: 40px;
-            }   
-
-   
     @media (min-width:$screen-tablet) 
     {
         display: flex;
@@ -62,14 +63,14 @@
             width: 100%;
             text-align: center;
         }
-        .box{
+        &__box{
             width: 50%;
         }     
     } 
     
     @media (min-width: $screen-desktop)
     {
-        .box{
+        &__box{
             width: 22%;
         }     
     }

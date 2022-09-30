@@ -26,15 +26,13 @@
 <body>
 
     <header class="header">
-        <div class="logo-header">
-            <div class="img_logo">
-                <img src="images/logo/ohmyfood.png" alt="logo-header">
-            </div>
+        <div class="header__logo">
+            <img class="header__logo__image" src="images/logo/ohmyfood.png" alt="logo-header">
         </div>
 
-        <div class="place">
-        <i class="fa-solid fa-location-dot"></i>
-        <p>Paris, Belleville</p>
+        <div class="header__place">
+            <i class="fa-solid fa-location-dot"></i>
+            <input class ="header__place__input" type="text" size ="15" placeholder="Paris, Belleville">
         </div>
     </header>
 
@@ -53,22 +51,23 @@
         <h2>Fonctionnement</h2>
         
         
-        <div class="box">
-            <span class="number">1</span>
+        <div class="functioning__box">
+            <span class="functioning__box__number">1</span>
             <i class="fa-solid fa-mobile-screen-button"></i> 
-            <p> Choisissez un restaurant</p>
+            <p class="functioning__box__text"> Choisissez un restaurant</p>
         </div>
 
-        <div class="box">
-            <span class="number">2</span>
-            <i class="fa-solid fa-list"></i> 
-            <p>Composez votre menu</p>
+        <div class="functioning__box">
+            <span class="functioning__box__number">2</span>
+            <i class="fa-solid fa-list icones"></i> 
+            <p class="functioning__box__text">Composez votre menu</p>
         </div>
 
-        <div class="box box_purple">
-            <span class="number">3</span>
+        
+        <div class="functioning__box functioning__box--purple">
+            <span class="functioning__box__number">3</span>
             <i class="fa-solid fa-store"></i> 
-            <p>Dégustez au restaurant</p> 
+            <p class="functioning__box__text">Dégustez au restaurant</p> 
         </div>
     </section>
     <!--restaurants -->
@@ -78,17 +77,15 @@
         <h2>Restaurants</h2>
         <!-- Carte 1 -->
        
-        
-         
-        <div class="card">
+        <div class="restaurant__card">
             
             <a href="pages/la_palette_du_goût.html">
                 
-                <figure class="images"> 
+                <figure class="restaurant__card__image"> 
                     <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" >
                 <figcaption class="new">Nouveau</figcaption> 
                 </figure>
-                <div class="text"> 
+                <div class="restaurant__card__text"> 
                     <div>
                         <h3>La palette du goût</h3>
                         <p>Ménilmontant</p>  
@@ -107,15 +104,15 @@
     
          <!-- Carte 2 -->
          
-         <div class="card">
+         <div class="restaurant__card">
             
             <a href="pages/la_note_enchanté.html">
                 
-                <figure class="images"> 
+                <figure class="restaurant__card__image"> 
                     <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" >
                 <figcaption class="new">Nouveau</figcaption> 
                 </figure>
-                <div class="text"> 
+                <div class="restaurant__card__text"> 
                     <div>
                         <h3>La note enchantée</h3>
                         <p>Charonne</p>  
@@ -133,13 +130,13 @@
 
          <!-- Carte 3 -->
         
-         <div class="card">
+         <div class="restaurant__card">
             <a href="pages/a_la_française.html">
-                <figure class="images">
+                <figure class="restaurant__card__image">
                     <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française" >
                 </figure>
 
-                <div class="text"> 
+                <div class="restaurant__card__text"> 
 
                     <div>
                         <h3>À la française</h3>
@@ -154,13 +151,13 @@
 
          <!-- Carte 4 -->
 
-         <div class="card">
+         <div class="restaurant__card">
             <a href="pages/le_délice_des_sens.html">
-                <figure class="images">
+                <figure class="restaurant__card__image">
                     <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" >
                 </figure>
 
-                <div class="text"> 
+                <div class="restaurant__card__text"> 
 
                     <div>
                         <h3>Le délice des sens</h3>
@@ -175,14 +172,16 @@
     
     </Section>
 
-    <footer class="footer">
-
-        <p>ohmyfood</p>
-        <div class="category"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</div> 
-        <div class="category"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</div>
-        <div class="category">    Mentions légales</div>
-        <div class="category"> Contact</div>
-
+    <footer class="footer">     
+        <nav class="footer__nav"> 
+            <p>ohmyfood</p>
+            <ul>
+                <li class="footer__nav__link"><a href="#"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a></li> 
+                <li class="footer__nav__link"><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+                <li class="footer__nav__link"><a href="#"> Mentions légales</a></li>
+                <li class="footer__nav__link"><a href="mailto:contact@ohmyfood.com"> Contact</a></li>
+            </ul>
+        </nav>
     </footer>
 
    <!-- Font awasome icônes -->

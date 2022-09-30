@@ -2,26 +2,64 @@
     
     width: 100%;
     background-color: $color-grey;
-    padding-top: 25px;
-    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 750px;
+    height: 1250px;
     h2{
        width: 90%;
-       font-size: 30px;
+       height: 25px;
+       font-size: 25px;
+       margin: 0;
+    }
+    &__card {
+        width: 90%;
+        height: 22%;
+        background-color: $color-white;
+        border-radius: 25px;
+        
+        &__image{
+            height: 75%;
+            width: 100%;               
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
+            img{
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+                border-radius: 25px 25px 0 0;
+            }
+        }
+        &__text
+        {
+            height: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            
+            p{
+                margin: 0;
+            }
+            h3{
+                margin: 0;
+            }
+        }
     }
     
     @media (min-width:$screen-tablet)
     {
+        height: 750px;
         h2 {
             text-align: center;
         }
-        .card {
+        &__card {
             width: 45%;
             height: 40%;
-            .images
+            &__image
             {
                 height: 75%;
             }
@@ -32,45 +70,11 @@
     {
         
         height: 350px;
-        .card{
+        &__card{
             width: 20%;
             height: 80%;
         }
     }
 }
 
-.card {
-    width: 90%;
-    height: 20%;
-    background-color: $color-white;
-    border-radius: 25px;
-    
-    .images{
-        height: 65%;
-        width: 100%;               
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: end;
-        img{
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-            border-radius: 25px 25px 0 0;
-        }
-    }
-    .text
-    {
-        height: 18%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 15px 20px;
-        
-        p{
-            margin: 0;
-        }
-        h3{
-            margin: 0;
-        }
-    }
-}
+

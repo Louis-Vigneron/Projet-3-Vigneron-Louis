@@ -1,10 +1,11 @@
-.footer{
+.footer__nav{
     color: $color-white;
     background-color: darken($color-grey, 75%);
     height: 200px;
     padding: 25px;
-    .category{
+    &__link{
         margin-bottom: 10px;
+        
         i {
             margin-right: 5px;
         }
@@ -13,11 +14,20 @@
         font-family: 'Shrikhand', cursive;
         font-size: 25px;
     }
+    a {
+        color: $color-white;
+    }
     @media (min-width : $screen-tablet)
     {
         display: flex;
         height: 100px;
         align-items: center;
         justify-content: space-around;
+        padding: 15px;
+        ul {
+            display: flex;
+            flex-grow: 1;
+            justify-content: space-around;
+        }
     }
 }

@@ -6,11 +6,14 @@
     h2 {
         font-size: 30px;
         margin: 0;
-        padding-top: 25px;
+        padding: 25px;
+        font-size: 25px;
 
     }
     p {
         font-size: 20px;
+        padding:0 25px;
+        margin: 0;
         margin-bottom: 50px;
         color: darken($color-grey, 50%);
     }
