@@ -22,7 +22,8 @@
         }
     &__meal {
         display: flex;
-        flex-wrap: wrap;  
+        flex-wrap: wrap;
+        width: 100%;  
          h2 {
             font-weight: 400;
             border-bottom: 3px solid $color-tertiray;
@@ -32,7 +33,7 @@
             }
       
         &__enter, &__main_dish, &__dessert{
-            width: 100%
+            width: 100%;
         }
         &__dish{
             @include card_shadow;
@@ -41,25 +42,48 @@
             border-radius: 25px;
             height: 75px;
             display: flex;
-            flex-direction: column;
             justify-content: space-around;
-            padding: 10px 20px;
-            
-                     
-            p{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin: 0;
-                width: 100%;               
-                span {
-                    font-weight: bold;
+            align-items: center;            
+            &:hover{
+                .selector{
+                    transition: 1s;
+                    min-width: 75px;
+                    background-color: $color-tertiray;
+                    i{
+                    transition: 1s;
+                    transform: rotate(2turn);
+                    }
                 }
+                }
+            span {
+                    font-weight: bold;
+                    padding: 15px;
+                    margin-top: 40px;
+                    
+                }
+            &__text{
+                height: 100%;
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin: 15px;   
+                width: 50px;
+                   
+            p{
+                margin: 0;        
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                
             }
+            
             h3{
                 margin: 0;
-                width: 100%;
-            }
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }}
         
             
         }
@@ -67,9 +91,12 @@
     @media (min-width:$screen-tablet)
     {
         &__meal {
-            &__dish{
-                width: 80%;
+            a{
+                width: 75%;
+                height: 75px;
+                margin-bottom: 25px;
             }
+           
             &__enter, &__main_dish, &__dessert{
                 display: flex;
                 flex-direction: column;
@@ -85,11 +112,9 @@
             width: 100%;
             flex-wrap: nowrap;
             justify-content: space-around;
-            &__dish{
-                width: 80%;
-            }
             &__enter, &__main_dish, &__dessert{
                 display:block;
+                width: 30%;
             }
         }
     }

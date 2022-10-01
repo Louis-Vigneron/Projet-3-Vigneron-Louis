@@ -59,6 +59,7 @@ ul {
   }
 }
 
+/*Like restaurant home */
 .favorite {
   width: 25px;
   text-align: center;
@@ -73,6 +74,24 @@ ul {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.selector {
+  width: 0px;
+  min-width: 0px;
+  font-size: 25px;
+  overflow: hidden;
+  text-align: center;
+  height: 100%;
+  border-radius: 0 25px 25px 0;
+  transition: 0.5s;
+}
+.selector i {
+  margin-top: 20px;
+  color: #99E2D0;
+  background-color: #fff;
+  border: 5px solid #fff;
+  border-radius: 25px;
 }
 
 .loader {
@@ -425,6 +444,7 @@ path {
 .menu__meal {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 .menu__meal h2 {
   font-weight: 400;
@@ -443,27 +463,49 @@ path {
   border-radius: 25px;
   height: 75px;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu__meal__dish:hover .selector {
+  transition: 1s;
+  min-width: 75px;
+  background-color: #99E2D0;
+}
+.menu__meal__dish:hover .selector i {
+  transition: 1s;
+  transform: rotate(2turn);
+}
+.menu__meal__dish span {
+  font-weight: bold;
+  padding: 15px;
+  margin-top: 40px;
+}
+.menu__meal__dish__text {
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 10px 20px;
+  margin: 15px;
+  width: 50px;
 }
-.menu__meal__dish p {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.menu__meal__dish__text p {
   margin: 0;
-  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-.menu__meal__dish p span {
-  font-weight: bold;
-}
-.menu__meal__dish h3 {
+.menu__meal__dish__text h3 {
   margin: 0;
-  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 @media (min-width: 768px) {
-  .menu__meal__dish {
-    width: 80%;
+  .menu__meal a {
+    width: 75%;
+    height: 75px;
+    margin-bottom: 25px;
   }
   .menu__meal__enter, .menu__meal__main_dish, .menu__meal__dessert {
     display: flex;
@@ -477,10 +519,8 @@ path {
     flex-wrap: nowrap;
     justify-content: space-around;
   }
-  .menu__meal__dish {
-    width: 80%;
-  }
   .menu__meal__enter, .menu__meal__main_dish, .menu__meal__dessert {
     display: block;
+    width: 30%;
   }
 }/*# sourceMappingURL=main.css.map */
