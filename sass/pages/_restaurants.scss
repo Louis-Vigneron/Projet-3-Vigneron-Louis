@@ -40,13 +40,13 @@
             align-items: center;
             justify-content: space-between;
             padding: 15px 20px;
-            
+           flex-grow: 1;
             p{
                 margin: 0;
-            }
+              }
             h3{
                 margin: 0;
-            }
+             }
         }
     }
     

@@ -59,8 +59,20 @@ ul {
   }
 }
 
+.favorite {
+  width: 25px;
+  text-align: center;
+  font-size: 20px;
+}
+.favorite--full {
+  margin-top: -22px;
+  color: transparent;
+}
 .favorite:hover {
   background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .loader {
@@ -69,37 +81,43 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.loader__svg {
+  height: 100%;
   width: 90%;
 }
-.loader__o1 {
+.loader__svg__o1 {
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
 }
-.loader__h {
+.loader__svg__h {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
-.loader__m {
+.loader__svg__m {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
-.loader__y {
+.loader__svg__y {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
-.loader__f {
+.loader__svg__f {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
-.loader__o2 {
+.loader__svg__o2 {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
-.loader__o3 {
+.loader__svg__o3 {
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
 }
-.loader__d {
+.loader__svg__d {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
@@ -107,8 +125,6 @@ ul {
 path {
   -webkit-animation: loader infinite 0.5s alternate;
           animation: loader infinite 0.5s alternate;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
   fill: #FF79DA;
 }
 
@@ -351,6 +367,7 @@ path {
   align-items: center;
   justify-content: space-between;
   padding: 15px 20px;
+  flex-grow: 1;
 }
 .restaurant__card__text p {
   margin: 0;

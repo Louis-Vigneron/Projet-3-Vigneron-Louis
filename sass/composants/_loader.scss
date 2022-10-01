@@ -4,39 +4,42 @@
     left: 50%;
     transform: translate(-50%,-50%);
     height: 100%;
-    width: 90%;
-   
-    &__o1 {
-        animation-delay: 0.1s;
-    }
-    &__h {
-        animation-delay: 0.2s;
-        
-    }
-    &__m {
-        animation-delay: 0.3s;
-    }
-    &__y {
-        animation-delay: 0.4s;
-    }
-    &__f {
-        animation-delay: 0.5s;
-    }
-    &__o2 {
-        animation-delay: 0.6s;
-    }
-    &__o3 {
-        animation-delay: 0.7s;
-    }
-    &__d {
-        animation-delay: 0.8s;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__svg{
+        height: 100%;
+        width: 90%;
+        &__o1 {
+            animation-delay: 0.1s;
+        }
+        &__h {
+            animation-delay: 0.2s;
+            
+        }
+        &__m {
+            animation-delay: 0.3s;
+        }
+        &__y {
+            animation-delay: 0.4s;
+        }
+        &__f {
+            animation-delay: 0.5s;
+        }
+        &__o2 {
+            animation-delay: 0.6s;
+        }
+        &__o3 {
+            animation-delay: 0.7s;
+        }
+        &__d {
+            animation-delay: 0.8s;
+        }
     }
  }
  
 path{
     animation: loader infinite 0.5s alternate;
-    animation-fill-mode: forwards;
-
     fill:$color-secondary;
     }
  

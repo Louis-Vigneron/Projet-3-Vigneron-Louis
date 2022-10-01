@@ -1,3 +1,15 @@
-.favorite:hover {
-    background: linear-gradient($color-secondary,$color-primary);
+.favorite{
+    width: 25px;
+    text-align: center;
+    font-size: 20px;
+    &--full{
+      margin-top: -22px;
+      color: transparent;
+    }
+    &:hover {
+        background: linear-gradient($color-secondary,$color-primary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        }
 }
