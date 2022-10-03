@@ -182,8 +182,8 @@ ul {
 }
 
 path {
-  -webkit-animation: loader infinite 0.5s alternate;
-          animation: loader infinite 0.5s alternate;
+  -webkit-animation: loader 10 0.4s alternate;
+          animation: loader 10 0.4s alternate;
   fill: #FF79DA;
 }
 
@@ -207,8 +207,8 @@ path {
           animation-fill-mode: both;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
   opacity: 0;
   position: relative;
   height: 0;
