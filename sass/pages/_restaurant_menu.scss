@@ -24,7 +24,7 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;  
-         h2 {
+         &__tittle {
             font-weight: 400;
             border-bottom: 3px solid $color-tertiray;
             height: 30px;
@@ -43,7 +43,7 @@
             height: 75px;
             display: flex;
             justify-content: space-around;
-            align-items: center;            
+            align-items: center;          
             &:hover{
                 .selector{
                     transition: 1s;
