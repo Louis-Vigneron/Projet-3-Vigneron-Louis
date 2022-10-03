@@ -142,6 +142,7 @@ ul {
   width: 100%;
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 .loader__svg {
   height: 100%;
@@ -197,6 +198,33 @@ path {
   100% {
     transform: translateY(-30px);
     fill: #9356DC;
+  }
+}
+.page {
+  -webkit-animation: appearance 1;
+          animation: appearance 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  position: relative;
+  opacity: 0;
+  z-index: 1;
+}
+
+@-webkit-keyframes end-loader {
+  100% {
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+@keyframes end-loader {
+  100% {
+    opacity: 1;
+    z-index: 2;
   }
 }
 .header__logo {
