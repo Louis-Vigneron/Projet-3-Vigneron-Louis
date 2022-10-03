@@ -42,6 +42,7 @@
 path{
     animation: loader infinite 0.5s alternate;
     fill:$color-secondary;
+    
     }
  
  @keyframes loader {
@@ -50,25 +51,29 @@ path{
         transform: translateY(-30px);
         fill: $color-primary;
     }
+
     
  }
  
 .page
 {
-    animation: appearance 1;
+    animation: endloader 1 alternate;
     animation-fill-mode: both;
     animation-duration: 1s;
     animation-delay: 5s;
-    position: relative;
     opacity: 0;
-    z-index: 1;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    margin-top: 30px;
 }
  
-@keyframes end-loader {
+@keyframes endloader {
   
     100% {
        opacity: 1;
        z-index: 2;
-   }
-   
+       height: auto;
+       transform: translateY(-30px);
+   }   
  }

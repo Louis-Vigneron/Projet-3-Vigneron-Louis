@@ -43,7 +43,7 @@ ul {
   border-radius: 5px;
   position: relative;
   font-weight: bold;
-  bottom: 190px;
+  bottom: 150px;
   width: 75px;
   padding: 5px;
   margin-right: 15px;
@@ -201,30 +201,36 @@ path {
   }
 }
 .page {
-  -webkit-animation: appearance 1;
-          animation: appearance 1;
+  -webkit-animation: endloader 1 alternate;
+          animation: endloader 1 alternate;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
-  position: relative;
   opacity: 0;
-  z-index: 1;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  margin-top: 30px;
 }
 
-@-webkit-keyframes end-loader {
+@-webkit-keyframes endloader {
   100% {
     opacity: 1;
     z-index: 2;
+    height: auto;
+    transform: translateY(-30px);
   }
 }
 
-@keyframes end-loader {
+@keyframes endloader {
   100% {
     opacity: 1;
     z-index: 2;
+    height: auto;
+    transform: translateY(-30px);
   }
 }
 .header__logo {
@@ -419,7 +425,7 @@ path {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 1250px;
+  height: 1000px;
 }
 .restaurant h2 {
   width: 90%;
