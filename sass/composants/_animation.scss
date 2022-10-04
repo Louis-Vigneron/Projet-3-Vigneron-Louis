@@ -4,6 +4,7 @@
     width: 25px;
     text-align: center;
     font-size: 20px;
+    transition: 0.5s;
     &--full{
       margin-top: -22px;
       color: transparent;
@@ -36,6 +37,20 @@
     border-radius: 25px;
   }
   
+}
+
+.menu__meal__dish{
+  &:hover{
+    .selector{
+        transition: 1s;
+        min-width: 75px;
+        background-color: $color-tertiray;
+        i{
+        transition: 1s;
+        transform: rotate(2turn);
+        }
+    }
+    }
 }
 
 /*appearance of the dishes one after the other*/

@@ -5,6 +5,11 @@
     font-size: 20px;
     padding: 15px;
     border-radius: 25px;
+    @include card_shadow;
+    &:hover{
+        @include card_shadow_hover;
+        background: linear-gradient(lighten($color-secondary, 2) 0%, lighten($color-primary, 2) 100%);
+    }
 }
 
 .new {

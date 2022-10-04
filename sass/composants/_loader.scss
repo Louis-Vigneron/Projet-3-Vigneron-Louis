@@ -40,7 +40,7 @@
  }
  
 path{
-    animation: loader 6 0.5s alternate;
+    animation: loader 4 0.5s alternate;
     fill:$color-secondary;
     
     }
@@ -60,7 +60,7 @@ path{
     animation: endloader 1 alternate;
     animation-fill-mode: both;
     animation-duration: 1s;
-    animation-delay: 3.6s;
+    animation-delay: 2.5s;
     opacity: 0;
     position: relative;
     height: 0;

@@ -44,22 +44,10 @@
             display: flex;
             justify-content: space-around;
             align-items: center;          
-            &:hover{
-                .selector{
-                    transition: 1s;
-                    min-width: 75px;
-                    background-color: $color-tertiray;
-                    i{
-                    transition: 1s;
-                    transform: rotate(2turn);
-                    }
-                }
-                }
             span {
                     font-weight: bold;
                     padding: 15px;
                     margin-top: 40px;
-                    
                 }
             &__text{
                 height: 100%;
