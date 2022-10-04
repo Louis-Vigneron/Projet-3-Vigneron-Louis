@@ -52,6 +52,12 @@
             object-fit: cover;
         }
     }
+    @media (min-width: $screen-desktop)
+    {
+        &__picture {
+                height: 400px;
+            }
+    }
 }
 
 

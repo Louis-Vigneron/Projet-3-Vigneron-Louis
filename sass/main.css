@@ -309,6 +309,11 @@ path {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (min-width: 992px) {
+  .header__picture {
+    height: 400px;
+  }
+}
 
 .footer__nav {
   color: #fff;
