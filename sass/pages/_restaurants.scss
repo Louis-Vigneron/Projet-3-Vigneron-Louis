@@ -19,6 +19,11 @@
         height: 22%;
         background-color: $color-white;
         border-radius: 25px;
+        @include card_shadow;
+        &:hover
+        {
+            @include card_shadow_hover;
+        }
         
         &__image{
             height: 75%;

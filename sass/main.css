@@ -454,6 +454,10 @@ path {
   height: 22%;
   background-color: #fff;
   border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.restaurant__card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 .restaurant__card__image {
   height: 75%;
