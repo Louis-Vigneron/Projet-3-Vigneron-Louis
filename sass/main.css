@@ -4,7 +4,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
+h1, .logo_write {
   font-family: "Shrikhand", cursive;
 }
 
@@ -38,7 +38,8 @@ ul {
 }
 .button:hover {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(#ff83dd 0%, #985ede 100%);
+  transform: opacity 250ms;
+  opacity: 0.8;
 }
 
 .new {
@@ -229,7 +230,7 @@ path {
   position: relative;
   height: 0;
   overflow: hidden;
-  margin-top: 30px;
+  margin-top: -30px;
 }
 
 @-webkit-keyframes endloader {
@@ -237,7 +238,7 @@ path {
     opacity: 1;
     z-index: 2;
     height: auto;
-    transform: translateY(-30px);
+    transform: translateY(30px);
   }
 }
 
@@ -246,7 +247,7 @@ path {
     opacity: 1;
     z-index: 2;
     height: auto;
-    transform: translateY(-30px);
+    transform: translateY(30px);
   }
 }
 .header__logo {
@@ -322,7 +323,6 @@ path {
   margin-right: 5px;
 }
 .footer__nav p {
-  font-family: "Shrikhand", cursive;
   font-size: 25px;
 }
 .footer__nav a {
@@ -474,11 +474,11 @@ path {
   border-radius: 25px 25px 0 0;
 }
 .restaurant__card__text {
-  height: 15%;
+  height: 25%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 20px;
+  padding: 0 20px;
   flex-grow: 1;
 }
 .restaurant__card__text p {
@@ -565,11 +565,11 @@ path {
   margin-top: 40px;
 }
 .menu__meal__dish__text {
-  height: 100%;
+  height: 65%;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 15px;
   width: 50px;
 }

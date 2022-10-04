@@ -5,3 +5,7 @@
 @mixin card_shadow_hover {
     box-shadow: 0 8px 12px rgba(0,0,0,0.2);
 }
+
+@mixin gradient {
+   background: linear-gradient($color-secondary,$color-primary);
+}

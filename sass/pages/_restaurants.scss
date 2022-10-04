@@ -20,6 +20,7 @@
         background-color: $color-white;
         border-radius: 25px;
         @include card_shadow;
+       
         &:hover
         {
             @include card_shadow_hover;
@@ -40,11 +41,11 @@
         }
         &__text
         {
-            height: 15%;
+            height: 25%;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 15px 20px;
+            padding: 0 20px;
            flex-grow: 1;
             p{
                 margin: 0;

@@ -10,7 +10,7 @@
       color: transparent;
     }
     &:hover {
-        background: linear-gradient($color-secondary,$color-primary);
+        @include gradient;
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
