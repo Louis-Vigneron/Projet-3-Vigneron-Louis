@@ -6,7 +6,9 @@
   
 OhMyFood est une entreprise qui permet à ses clients de commander leurs repas en ligne. Pour cette version, ils sont penché sur le pays réputé pour sa gastronomie, et notamment sa capitale, Paris en France.
 
-Voici le lien pour le site : https://louis-vigneron.github.io/Projet-3-Vigneron-Louis/
+![Screenshot  Accueil OhMyFood](https://user-images.githubusercontent.com/114060138/194071926-8144ad62-aa7f-4d02-8d36-4e32c9a0f3ed.png)
+
+Pour voir la suite, c'est par ici ! : https://louis-vigneron.github.io/Projet-3-Vigneron-Louis/
 
 ## Contenu du site 
 - Une page d'accueil
