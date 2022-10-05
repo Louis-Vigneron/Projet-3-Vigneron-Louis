@@ -113,26 +113,26 @@ ul {
 }
 
 /*appearance of the dishes one after the other*/
-.menu__meal__dish, .menu__meal__tittle {
+.menu__meal__dish, .menu__meal__title {
   -webkit-animation: appearance 1 2s alternate;
           animation: appearance 1 2s alternate;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   opacity: 0;
 }
-.menu__meal__dish--1, .menu__meal__tittle--1 {
+.menu__meal__dish--1, .menu__meal__title--1 {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
-.menu__meal__dish--2, .menu__meal__tittle--2 {
+.menu__meal__dish--2, .menu__meal__title--2 {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
-.menu__meal__dish--3, .menu__meal__tittle--3 {
+.menu__meal__dish--3, .menu__meal__title--3 {
   -webkit-animation-delay: 1.1s;
           animation-delay: 1.1s;
 }
-.menu__meal__dish--4, .menu__meal__tittle--4 {
+.menu__meal__dish--4, .menu__meal__title--4 {
   -webkit-animation-delay: 1.3s;
           animation-delay: 1.3s;
 }
@@ -379,8 +379,8 @@ path {
   background: #F6F6F6;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
-  padding: 25px;
-  margin: 25px;
+  padding: 30px;
+  margin-bottom: 25px;
   font-size: 20px;
   align-items: center;
 }
