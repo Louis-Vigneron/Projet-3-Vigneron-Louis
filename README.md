@@ -10,7 +10,7 @@ OhMyFood est une entreprise qui permet à ses clients de commander leurs repas e
 Screenshot de l'accueil version desktop.  
   
   
-Pour découvrir la suite et l'affiche version tablette et mobile, c'est par ici ! : https://louis-vigneron.github.io/Projet-3-Vigneron-Louis/  
+Pour découvrir la suite et l'affichage version tablette et mobile, c'est par ici ! : https://louis-vigneron.github.io/Projet-3-Vigneron-Louis/  
  
 
 ## Contenu du site 
