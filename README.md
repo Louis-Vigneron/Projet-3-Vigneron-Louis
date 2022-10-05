@@ -8,6 +8,9 @@ OhMyFood est une entreprise qui permet à ses clients de commander leurs repas e
 
 Voici le lien pour le site : https://louis-vigneron.github.io/Projet-3-Vigneron-Louis/
 
+## Contenu du site 
+- Une page d'accueil
+- une page par restaurant (soit 4 à l'heure actuel)
 
 ## Technologies utilisées
 
