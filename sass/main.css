@@ -38,7 +38,6 @@ ul {
 }
 .button:hover {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  transform: opacity 250ms;
   opacity: 0.8;
 }
 
