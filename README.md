@@ -1,8 +1,8 @@
-# Projet 3 OpenClassroom
+# Projet 3 OpenClassrooms
 
 ## Présentation
 
-3 ème projet de la formation de développeur Web de chez OpenClassroom, ce projet à pour but d'intégrer une maquette en "mobile first" et de dynamiser les pages web avec des animations.  
+3 ème projet de la formation de développeur Web de chez OpenClassrooms, ce projet à pour but d'intégrer une maquette en "mobile first" et de dynamiser les pages web avec des animations.  
   
 OhMyFood est une entreprise qui permet à ses clients de commander leurs repas en ligne. Pour cette version, ils se sont penché sur le pays réputé pour sa gastronomie, et notamment sa capitale, Paris en France.
 
